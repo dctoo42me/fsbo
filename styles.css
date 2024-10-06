@@ -188,6 +188,11 @@ div.video {
 
 /************************ Gallery ****************************/
 /* Gallery container */
+.gallery-container {
+    position: relative;
+    width: 100%;
+}
+
 .gallery {
     /* position: relative; */
     display: flex;
@@ -229,7 +234,7 @@ button.prev, button.next {
     cursor: pointer;
     border-radius: 50%;
     position: absolute;
-    bottom: 30%;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 100;
 }
@@ -286,8 +291,8 @@ button:hover {
 
 .close {
     position: absolute;
-    top: 20px;
-    right: 35px;
+    top: 15%;
+    right: 3%;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
@@ -435,6 +440,7 @@ section.footer {
         height: 300px;
         width: auto;
     }
+    
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
