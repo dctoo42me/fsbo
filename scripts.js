@@ -43,7 +43,7 @@ closeModalBtn.addEventListener('click', function() {
 
 // Close modal when clicking outside the modal content
 
-window.addEventListener('ontouchstart', function(event) {
+window.addEventListener('touchstart', function(event) {
     if (event.target === modal) {
         modal.style.display = 'none';
     }
