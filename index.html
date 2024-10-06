@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed BG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <a href="index.html">
+                <div id="logo">
+                    <img src="images/logo.dark-transparent.png" alt="logo">
+                </div>
+            </a>
+            <ul>
+                <a class="button" href="index.html">
+                    <li>Home</li>
+                </a>
+                <a class="button" href="#second">
+                    <li>Video</li>
+                </a>
+                <a class="button" href="#third">
+                    <li>Contact</li>
+                </a>
+                <!-- <a class="button" href="#fourth">
+                    <li>Fourth</li>
+                </a> -->
+            </ul>
+        </nav>
+    </div>
+    <div class="main-container">
+        <div class="nav-offset"></div>
+        <div class="section-container">
+            <section id="first" class="first row nav-m-offset">
+                <div class="heading">
+                    <h1>2003 Ford E-350 Box Truck</h1>
+                    <p>Good Running Condition</p>
+                </div>
+
+                <div class="gallery">
+                    <button class="prev">❮</button> <!-- Previous Arrow -->
+                    <div class="gallery-item">
+                        <img src="images/car1.jpg" alt="Car Image 1" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/car2.jpg" alt="Car Image 2" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/car3.jpg" alt="Car Image 3" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/car4.jpg" alt="Car Image 4" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/car6.jpg" alt="Car Image 4" />
+                    </div>
+                                        
+                    <!-- More images here -->
+                    <button class="next">❯</button> <!-- Next Arrow -->
+                </div>
+                <div class="details-list">
+                    <ul>
+                        <li>191,392 miles</li>
+                        <li>7.3L V8 Diesel Engine</li>
+                        <li>Automatic Transmission</li>
+                        <li>Rear Wheel Drive</li>
+                        <li>4-Wheel Disc Brakes</li>
+                        <li>2 New Batteries Installed</li>
+                        <li>Seat Trim: Cloth</li>
+                        <li>AM/FM Stereo</li>
+                        
+                    </ul>
+                </div>
+                <div class="modal" id="modal">
+                    <span class="close">&times;</span>
+                    <div class="modal-content">
+                        <div class="modal-images" id="modal-images">
+                            <!-- All images will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="second" class="second row nav-m-offset">
+                <div class="heading">
+                    <h2>Engine Startup</h2>
+                    <p>Purs like a Kitten</p>
+                </div>
+                    <div class="video">
+                        <video width="300" height="auto" controls>
+                            <source src="images/car5.MOV">
+                        </video>
+                    </div>
+            </section>
+            <section id="third" class="third row nav-m-offset">
+                <div class="heading ">
+                    <h2 class="white-text">Contact Us</h2>
+                    <p>For more Information Call Us at</p>
+                    <div class="phone">
+                        <a href="tel:+19569709771">956-970-9771</a>
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <section id="fourth" class="fourth row nav-m-offset footer">
+                <div class="heading ">
+                    <!-- <h2 class="white-text">Footer Section</h2> -->
+                </div>
+                    <a class="creator" href="#">
+                        <p>&copyCreated by DC</p>
+                    </a>
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
