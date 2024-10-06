@@ -42,18 +42,18 @@ closeModalBtn.addEventListener('click', function() {
 });
 
 // Close modal when clicking outside the modal content
-window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
 
 window.addEventListener('ontouchstart', function(event) {
-    if (event.target === modal) {
+    if (event.target === modalImagesContainer) {
         modal.style.display = 'none';
     }
 });
 
+window.addEventListener('click', function(event) {
+    if (event.target === modalImagesContainer) {
+        modal.style.display = 'none';
+    }
+});
 
 // Gallery arrow functionality
 const gallery = document.querySelector('.gallery');

@@ -191,6 +191,7 @@ div.video {
 .gallery-container {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .gallery {
@@ -200,12 +201,14 @@ div.video {
     scroll-behavior: smooth; /* Enables smooth scrolling */
     white-space: nowrap;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 /* Gallery item styling */
 .gallery-item {
     flex: 0 0 auto;
     margin-right: 0;
+    overflow: hidden;
 }
 
 .gallery-item img {
