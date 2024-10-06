@@ -380,7 +380,12 @@ section.footer {
     }
 
     section h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    section .one {
+        padding: 5px 20px;
     }
 
     section h2 {
