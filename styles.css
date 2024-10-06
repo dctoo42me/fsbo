@@ -126,6 +126,16 @@ section h2 {
     text-align: left;
 }
 
+.price {
+    color: white;
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+video {
+    background-color: #262626;
+}
+
 .heading {
     padding-bottom: 50px;
 }
@@ -179,6 +189,7 @@ div.video {
 /************************ Gallery ****************************/
 /* Gallery container */
 .gallery {
+    /* position: relative; */
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth; /* Enables smooth scrolling */
@@ -189,7 +200,11 @@ div.video {
 /* Gallery item styling */
 .gallery-item {
     flex: 0 0 auto;
-    margin: 10px;
+    margin-right: 0;
+}
+
+.gallery-item img {
+    margin-right: 20px;
 }
 
 .gallery-item img, .gallery video {
@@ -214,7 +229,7 @@ button.prev, button.next {
     cursor: pointer;
     border-radius: 50%;
     position: absolute;
-    top: 55%;
+    bottom: 30%;
     transform: translateY(-50%);
     z-index: 100;
 }
