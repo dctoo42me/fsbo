@@ -2,6 +2,7 @@ const galleryImages = document.querySelectorAll('.gallery-item img');
 const modal = document.getElementById('modal');
 const modalImagesContainer = document.getElementById('modal-images');
 const closeModalBtn = document.querySelector('.close');
+const galleryContainer = document.querySelector('.gallery-container');
 
 // Function to open modal and display all images
 function openModal(clickedImageSrc) {
@@ -18,6 +19,8 @@ function openModal(clickedImageSrc) {
 
     // Display the modal
     modal.style.display = 'block';
+
+    galleryContainer.style.display = 'none';
 
     // Scroll to the clicked image in the modal
     const clickedImageIndex = Array.from(galleryImages).findIndex(image => image.src === clickedImageSrc);
@@ -38,22 +41,28 @@ galleryImages.forEach(image => {
 
 // Close modal when close button is clicked
 closeModalBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
+    setTimeout(closeModal, 5);
 });
 
 // Close modal when clicking outside the modal content
 
-window.addEventListener('touchstart', function(event) {
+window.addEventListener('touchend', function(event) {
     if (event.target === modal) {
-        modal.style.display = 'none';
+        setTimeout(closeModal, 5);
     }
 });
 
 window.addEventListener('click', function(event) {
     if (event.target === modalImagesContainer) {
-        modal.style.display = 'none';
+        setTimeout(closeModal, 5);
     }
 });
+
+function closeModal() {
+    modal.style.display = 'none';
+    galleryContainer.style.display = 'block';
+}
+
 
 // Gallery arrow functionality
 const gallery = document.querySelector('.gallery');

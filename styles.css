@@ -191,11 +191,11 @@ div.video {
 .gallery-container {
     position: relative;
     width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
 .gallery {
-    /* position: relative; */
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth; /* Enables smooth scrolling */
